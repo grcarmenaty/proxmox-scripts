@@ -100,7 +100,7 @@ runcmd apt-get update && apt-get install -y -q --no-install-recommends openresty
 # Install nodejs
 log "Installing nodejs"
 apt-get update
-apt-get install -y ca-certificates curl gnupg
+apt-get install -y ca-certificates curl gnupg npm
 mkdir -p /etc/apt/keyrings
 curl -fsSL https://deb.nodesource.com/gpgkey/nodesource-repo.gpg.key | gpg --dearmor -o /etc/apt/keyrings/nodesource.gpg
 echo "deb [signed-by=/etc/apt/keyrings/nodesource.gpg] https://deb.nodesource.com/node_16.x nodistro main" | tee /etc/apt/sources.list.d/nodesource.list
