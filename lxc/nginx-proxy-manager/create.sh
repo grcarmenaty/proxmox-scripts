@@ -34,7 +34,7 @@ function error {
 _raw_base="https://raw.githubusercontent.com/grcarmenaty/proxmox-scripts/main/lxc/nginx-proxy-manager"
 # Operating system
 _os_type=debian
-_os_version=12
+_os_version=11
 # System architecture
 _arch=$(dpkg --print-architecture)
 
